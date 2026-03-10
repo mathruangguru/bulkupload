@@ -2,7 +2,7 @@
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <title>Tabel Soal untuk Google Docs (11-20)</title>
+    <title>Tabel Soal untuk Google Docs (11-15)</title>
     <!-- SKRIP MATHJAX DITAMBAHKAN DI SINI -->
     <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script
@@ -19,7 +19,8 @@
       table {
         border-collapse: collapse;
         width: 100%;
-        font-size: 12px;
+        /* Mengubah font-size tabel secara keseluruhan menjadi 12pt sesuai instruksi */
+        font-size: 12pt; 
       }
       th,
       td {
@@ -30,6 +31,7 @@
       }
       th {
         background-color: #f2f2f2;
+        font-size: 10pt; /* Header dibiarkan sedikit lebih kecil agar proporsional */
       }
       /* Style untuk kolom agar tidak terlalu lebar */
       td:nth-child(1),
@@ -38,6 +40,17 @@
       td:nth-child(4),
       td:nth-child(5) {
         min-width: 100px;
+        font-size: 10pt; /* Meta data bisa lebih kecil sedikit */
+      }
+      /* Mengatur font khusus untuk Soal, Opsi, dan Pembahasan menjadi 12pt mutlak */
+      td:nth-child(8), /* Question */
+      td:nth-child(9), /* Option A */
+      td:nth-child(10), /* Option B */
+      td:nth-child(11), /* Option C */
+      td:nth-child(12), /* Option D */
+      td:nth-child(13), /* Option E */
+      td:nth-child(15) { /* Discussion */
+        font-size: 12pt !important;
       }
       td:nth-child(8) {
         /* Kolom Pertanyaan */
@@ -48,6 +61,7 @@
         min-width: 50px;
         text-align: center;
         font-weight: bold;
+        font-size: 12pt;
       }
       td:nth-child(15) {
         /* Kolom Discussion (Baru) */
@@ -91,453 +105,158 @@
       <tbody>
         <!-- Soal 11 -->
         <tr>
-          <td>COURSE-HTGHAVC1</td>
-          <td>TOPIC-Z0U2TKA5</td>
-          <td>SUBTOPI-P5GZJQYT</td>
-          <td>Medium</td>
-          <td>TOROA</td>
-          <td>RUANGSNBT</td>
+          <td>COURSE-9DHIE5L5</td>
+          <td></td>
+          <td></td>
+          <td>HOTS</td>
+          <td>Brain Academy</td>
+          <td>TEST_05KMERMAT9401</td>
           <td></td>
           <td>
-            Sebuah kerucut terletak tepat di dalam sebuah tabung tanpa tutup.
-            Tentukan perbandingan antara luas permukaan tabung dengan luas
-            permukaan kerucut.
-            <br /><br />
-            [Deskripsi Gambar: Sebuah kerucut terletak tepat di dalam sebuah
-            tabung tanpa tutup atas. Diketahui diameter alas tabung sama dengan
-            diameter alas kerucut, yaitu 12 cm. Tinggi tabung juga sama dengan
-            tinggi kerucut, yaitu 8 cm.]
+            Sebuah kue tart dipotong menjadi 10 bagian sama besar dan 8 bagian di antaranya telah dimakan oleh keluarga Dika. Kue tart kedua yang berukuran sama persis hanya dipotong menjadi 5 bagian sama besar. Berapa bagian yang harus dimakan pada kue tart kedua tersebut agar sisa kue di kedua loyang menjadi sama banyak?
           </td>
-          <td>11 : 8</td>
-          <td>11 : 6</td>
-          <td>13 : 8</td>
-          <td>13 : 9</td>
+          <td>1 bagian</td>
+          <td>2 bagian</td>
+          <td>3 bagian</td>
+          <td>4 bagian</td>
           <td></td>
-          <td>A</td>
+          <td>D</td>
           <td>
             PEMBAHASAN:<br />
-            <strong>Langkah 1: Tentukan jari-jari ($r$) dan tinggi ($t$).</strong><br />
-            $r = \text{Diameter} : 2 = 12 : 2 = 6 \text{ cm}$.<br />
-            $t = 8 \text{ cm}$. <br />
-            <strong>Langkah 2: Hitung garis pelukis kerucut ($s$).</strong><br />
-            $$s = \sqrt{r^2 + t^2} = \sqrt{6^2 + 8^2} = \sqrt{36 + 64} = \sqrt{100} = 10 \text{ cm}$$
-            <br />
-            <strong>Langkah 3: Hitung Luas Permukaan Tabung (tanpa
-              tutup).</strong><br />
-            $Lp_{Tabung} = \text{Luas Alas} + \text{Luas Selimut} = \pi r^2 + 2
-            \pi r t$<br />
-            $$Lp_{Tabung} = \pi (6^2) + 2 \pi (6)(8) = 36\pi + 96\pi = 132\pi \text{ cm}^2$$
-            <br />
-            <strong>Langkah 4: Hitung Luas Permukaan Kerucut (lengkap).</strong><br />
-            $Lp_{Kerucut} = \text{Luas Alas} + \text{Luas Selimut} = \pi r^2 + \pi
-            r s$<br />
-            $$Lp_{Kerucut} = \pi (6^2) + \pi (6)(10) = 36\pi + 60\pi = 96\pi \text{ cm}^2$$
-            <br />
-            <strong>Langkah 5: Hitung perbandingan.</strong><br />
-            $\text{Tabung} : \text{Kerucut} = 132\pi : 96\pi = 132 : 96$.<br />
-            Sederhanakan dengan membagi 12: $11 : 8$. <br />
-            <strong>Kesimpulan:</strong> Perbandingannya adalah 11 : 8. Jawaban
-            yang benar adalah <strong>A</strong>.
+            <strong>Langkah 1: Analisis sisa kue pertama.</strong><br />
+            Sisa kue pertama = $$10 - 8 = 2$$ bagian dari 10 bagian, atau senilai dengan $$\\frac{2}{10}$$. Jika disederhanakan (dibagi 2 pada pembilang dan penyebut), maka sisanya adalah $$\\frac{1}{5}$$ bagian.<br /><br />
+            <strong>Langkah 2: Sesuaikan dengan kue kedua.</strong><br />
+            Kue kedua dipotong menjadi 5 bagian. Agar sisanya sama persis dengan kue pertama (yaitu $$\\frac{1}{5}$$ bagian), maka harus tersisa tepat 1 potong kue saja dari total 5 potong.<br /><br />
+            <strong>Langkah 3: Hitung bagian yang harus dimakan.</strong><br />
+            Jika kita ingin menyisakan 1 potong, maka bagian yang harus dimakan adalah total potongan dikurangi bagian sisa: $$5 - 1 = 4$$ bagian.<br /><br />
+            <b><u>Jadi, jawaban yang tepat adalah D.</u></b>
           </td>
           <td></td>
           <td></td>
         </tr>
         <!-- Soal 12 -->
         <tr>
-          <td>COURSE-HTGHAVC1</td>
-          <td>TOPIC-9BL3H5B7</td>
-          <td>SUBTOPI-A06WC38T</td>
-          <td>Medium</td>
-          <td>TOROA</td>
-          <td>RUANGSNBT</td>
+          <td>COURSE-9DHIE5L5</td>
+          <td></td>
+          <td></td>
+          <td>HOTS</td>
+          <td>Brain Academy</td>
+          <td>TEST_05KMERMAT9401</td>
           <td></td>
           <td>
-            Berapa banyak cara memilih tiga bilangan asli berbeda yang hasil
-            kalinya adalah 24?
+            Ibu berbelanja ke pasar membeli tiga jenis bahan pokok. Ibu membeli beras seberat $$1,2$$ kg, telur seberat $$\\frac{5}{4}$$ kg, dan gula merah yang beratnya setara dengan $$130\%$$ dari $$1$$ kg. Urutan bahan belanjaan ibu dari yang paling ringan hingga yang paling berat adalah ....
           </td>
-          <td>3</td>
-          <td>4</td>
-          <td>5</td>
-          <td>6</td>
+          <td>Beras, telur, gula merah</td>
+          <td>Beras, gula merah, telur</td>
+          <td>Telur, beras, gula merah</td>
+          <td>Gula merah, telur, beras</td>
           <td></td>
-          <td>B</td>
+          <td>A</td>
           <td>
             PEMBAHASAN:<br />
-            <strong>Konsep:</strong> Cari faktor-faktor dari 24, lalu cari
-            kombinasi 3 bilangan berbeda. <br /><br />
-            <strong>Langkah 1: Faktorisasi 24.</strong><br />
-            Faktor dari 24 adalah: 1, 2, 3, 4, 6, 8, 12, 24. <br /><br />
-            <strong>Langkah 2: Cari kombinasi 3 bilangan berbeda ($a \times b
-              \times c = 24$).</strong><br />
-            - Kelompok dengan angka 1:
-            <ul>
-              <li>$1 \times 2 \times 12 = 24$ (Memenuhi)</li>
-              <li>$1 \times 3 \times 8 = 24$ (Memenuhi)</li>
-              <li>$1 \times 4 \times 6 = 24$ (Memenuhi)</li>
-            </ul>
-            - Kelompok tanpa angka 1:
-            <ul>
-              <li>$2 \times 3 \times 4 = 24$ (Memenuhi)</li>
-            </ul>
-            <br />
-            <strong>Langkah 3: Hitung jumlah kombinasinya.</strong><br />
-            Ada 4 kombinasi: {1, 2, 12}, {1, 3, 8}, {1, 4, 6}, {2, 3, 4}.
-            <br /><br />
-            <strong>Kesimpulan:</strong> Ada 4 cara memilih. Jawaban yang benar
-            adalah <strong>B</strong>.
+            Untuk mengurutkan berat bahan-bahan tersebut, kita samakan semua bentuk bilangannya ke dalam bentuk desimal agar lebih mudah dibandingkan.<br /><br />
+            Beras = $$1,2$$ kg = $$1,20$$ kg.<br />
+            Telur = $$\\frac{5}{4}$$ kg = $$1,25$$ kg.<br />
+            Gula merah = $$130\%$$ dari $$1$$ kg = $$\\frac{130}{100} \times 1$$ = $$1,30$$ kg.<br /><br />
+            Jika diurutkan dari nilai desimal yang paling kecil (paling ringan) ke yang paling besar (paling berat):<br />
+            $$1,20 < 1,25 < 1,30$$<br />
+            Maka urutannya adalah beras, telur, lalu gula merah.<br /><br />
+            <b><u>Jadi, jawaban yang tepat adalah A.</u></b>
           </td>
           <td></td>
           <td></td>
         </tr>
         <!-- Soal 13 -->
         <tr>
-          <td>COURSE-HTGHAVC1</td>
-          <td>TOPIC-TKSH02NQ</td>
-          <td>SUBTOPI-VLKVLCFE</td>
-          <td>Medium</td>
-          <td>TOROA</td>
-          <td>RUANGSNBT</td>
+          <td>COURSE-9DHIE5L5</td>
+          <td></td>
+          <td></td>
+          <td>HOTS</td>
+          <td>Brain Academy</td>
+          <td>TEST_05KMERMAT9401</td>
           <td></td>
           <td>
-            Diketahui sebuah persamaan
-            $$(\frac{1}{x})^2 - 2(\frac{1}{x}) = 8$$. Jika $$x$$ adalah bilangan
-            positif, berapakah nilai $$x$$?
+            Tiga buah toko tas sedang mengadakan promosi diskon akhir tahun. Toko "Amanah" memberikan potongan harga sebesar $$\\frac{1}{5}$$ dari harga normal. Toko "Berkah" memberikan potongan harga sebesar $$25\%$$. Toko "Ceria" memberikan potongan harga sebesar $$0,15$$. Jika Tari ingin membeli tas dengan harga normal Rp200.000,00, toko manakah yang memberikan harga akhir paling murah dan berapakah harga tas di toko tersebut setelah diskon?
           </td>
-          <td>4</td>
-          <td>2</td>
-          <td>$$\frac{1}{2}$$</td>
-          <td>$$\frac{1}{4}$$</td>
+          <td>Toko Amanah dengan harga Rp160.000,00</td>
+          <td>Toko Berkah dengan harga Rp150.000,00</td>
+          <td>Toko Ceria dengan harga Rp170.000,00</td>
+          <td>Toko Berkah dengan harga Rp50.000,00</td>
           <td></td>
-          <td>D</td>
+          <td>B</td>
           <td>
             PEMBAHASAN:<br />
-            <strong>Langkah 1: Misalkan $\frac{1}{x} = y$.</strong><br />
-            Persamaan menjadi: $y^2 - 2y = 8$. <br /><br />
-            <strong>Langkah 2: Pindahkan 8 ke kiri untuk membentuk persamaan
-              kuadrat.</strong><br />
-            $y^2 - 2y - 8 = 0$. <br /><br />
-            <strong>Langkah 3: Faktorkan persamaan kuadrat.</strong><br />
-            Cari dua bilangan yang jika dikali hasilnya -8 dan jika dijumlah
-            hasilnya -2. Bilangan itu adalah -4 dan +2.<br />
-            $(y - 4)(y + 2) = 0$.<br />
-            Maka, $y = 4$ atau $y = -2$. <br /><br />
-            <strong>Langkah 4: Kembalikan ke bentuk $x$.</strong><br />
-            Karena $x$ harus positif, maka $\frac{1}{x}$ juga harus positif. Jadi
-            kita pilih $y = 4$.<br />
-            $$\frac{1}{x} = 4$$
-            $$1 = 4x$$
-            $$x = \frac{1}{4}$$
-            <br />
-            <strong>Kesimpulan:</strong> Nilai $x$ adalah $\frac{1}{4}$. Jawaban
-            yang benar adalah <strong>D</strong>.
+            Toko yang memberikan harga akhir paling murah adalah toko yang memberikan diskon paling besar. Mari kita ubah semua bentuk diskon ke persentase ($$\%$$).<br /><br />
+            Diskon Toko Amanah = $$\\frac{1}{5} \times 100\% = 20\%$$<br />
+            Diskon Toko Berkah = $$25\%$$<br />
+            Diskon Toko Ceria = $$0,15 \times 100\% = 15\%$$<br /><br />
+            Diskon terbesar adalah milik Toko Berkah ($$25\%$$).<br />
+            Besar nominal diskon di Toko Berkah = $$25\% \times 200.000 = 50.000$$.<br />
+            Harga akhir = Harga Normal - Diskon = $$200.000 - 50.000 = 150.000$$.<br /><br />
+            Maka, Toko Berkah memberikan harga termurah yaitu Rp150.000,00.<br /><br />
+            <b><u>Jadi, jawaban yang tepat adalah B.</u></b>
           </td>
           <td></td>
           <td></td>
         </tr>
         <!-- Soal 14 -->
         <tr>
-          <td>COURSE-HTGHAVC1</td>
-          <td>TOPIC-FSF2AE44</td>
-          <td>SUBTOPI-95EYOPIJ</td>
-          <td>Medium</td>
-          <td>TOROA</td>
-          <td>RUANGSNBT</td>
+          <td>COURSE-9DHIE5L5</td>
+          <td></td>
+          <td></td>
+          <td>HOTS</td>
+          <td>Brain Academy</td>
+          <td>TEST_05KMERMAT9401</td>
           <td></td>
           <td>
-            Seseorang pergi ke sekolah dengan berjalan kaki selama 15 menit
-            pertama dengan kecepatan rata-rata 4 km/jam. Karena takut terlambat,
-            sisa perjalanan ia tempuh dengan ojek selama 10 menit dengan
-            kecepatan rata-rata 30 km/jam. Berapa jarak total dari rumah ke
-            sekolah?
+            Di sebuah peternakan, perbandingan jumlah ayam dan bebek dapat digambarkan dengan <i>bar model</i> (model balok). Jumlah blok balok untuk ayam adalah 5 unit, sedangkan jumlah blok balok untuk bebek adalah 2 unit. Jika total keseluruhan ayam dan bebek di peternakan tersebut adalah 140 ekor, berapakah selisih antara jumlah ayam dan bebek?
           </td>
-          <td>5 km</td>
-          <td>6 km</td>
-          <td>6,5 km</td>
-          <td>7 km</td>
+          <td>40 ekor</td>
+          <td>60 ekor</td>
+          <td>80 ekor</td>
+          <td>100 ekor</td>
           <td></td>
           <td>B</td>
           <td>
             PEMBAHASAN:<br />
-            <strong>Langkah 1: Hitung jarak jalan kaki.</strong><br />
-            Waktu = 15 menit = $\frac{15}{60}$ jam = $\frac{1}{4}$ jam.<br />
-            $$Jarak 1 = Kecepatan \times Waktu = 4 \text{ km/jam} \times \frac{1}{4} \text{ jam} = 1 \text{ km}$$
-            <br />
-            <strong>Langkah 2: Hitung jarak naik ojek.</strong><br />
-            Waktu = 10 menit = $\frac{10}{60}$ jam = $\frac{1}{6}$ jam.<br />
-            $$Jarak 2 = Kecepatan \times Waktu = 30 \text{ km/jam} \times \frac{1}{6} \text{ jam} = 5 \text{ km}$$
-            <br />
-            <strong>Langkah 3: Hitung total jarak.</strong><br />
-            Total Jarak = Jarak 1 + Jarak 2 = $1 \text{ km} + 5 \text{ km} = 6
-            \text{ km}$. <br /><br />
-            <strong>Kesimpulan:</strong> Jarak totalnya adalah 6 km. Jawaban yang
-            benar adalah <strong>B</strong>.
+            Dalam penyelesaian menggunakan <i>Bar Model</i>, kita menjumlahkan seluruh unit balok terlebih dahulu untuk mengetahui nilai setiap 1 unit.<br /><br />
+            Total keseluruhan unit = $$5 + 2 = 7$$ unit blok.<br />
+            Diketahui total populasi = $$140$$ ekor.<br />
+            Maka, nilai 1 unit blok = $$140 : 7 = 20$$ ekor.<br /><br />
+            Selisih blok ayam dan bebek secara visual = $$5 - 2 = 3$$ unit blok.<br />
+            Karena 1 unit blok bernilai 20 ekor, maka selisih nyatanya = $$3 \times 20 = 60$$ ekor.<br /><br />
+            <b><u>Jadi, jawaban yang tepat adalah B.</u></b>
           </td>
           <td></td>
           <td></td>
         </tr>
         <!-- Soal 15 -->
         <tr>
-          <td>COURSE-HTGHAVC1</td>
-          <td>TOPIC-Z0U2TKA5</td>
-          <td>SUBTOPI-P5GZJQYT</td>
-          <td>Medium</td>
-          <td>TOROA</td>
-          <td>RUANGSNBT</td>
+          <td>COURSE-9DHIE5L5</td>
+          <td></td>
+          <td></td>
+          <td>HOTS</td>
+          <td>Brain Academy</td>
+          <td>TEST_05KMERMAT9401</td>
           <td></td>
           <td>
-            Volume kubus A adalah 27 kali volume kubus B. Jika panjang rusuk
-            kubus B adalah 4 cm, maka panjang rusuk kubus A adalah ... cm.
+            Pak Joko mendapat tugas mengaspal sebuah jalan pedesaan yang panjang totalnya mencapai 24 km. Pada hari pertama, ia berhasil mengaspal $$\\frac{1}{4}$$ bagian jalan. Pada hari kedua, ia berhasil mengaspal $$\\frac{3}{8}$$ bagian jalan. Berapa kilometer sisa jalan yang belum diaspal oleh Pak Joko?
           </td>
-          <td>8</td>
-          <td>36</td>
-          <td>12</td>
-          <td>108</td>
-          <td></td>
-          <td>C</td>
-          <td>
-            PEMBAHASAN:<br />
-            <strong>Langkah 1: Hitung volume kubus B.</strong><br />
-            $V_B = s \times s \times s = 4 \times 4 \times 4 = 64 \text{ cm}^3$.
-            <br /><br />
-            <strong>Langkah 2: Hitung volume kubus A.</strong><br />
-            $V_A = 27 \times V_B = 27 \times 64 = 1728 \text{ cm}^3$.
-            <br /><br />
-            <strong>Langkah 3: Cari panjang rusuk kubus A.</strong><br />
-            $s_A = \sqrt[3]{V_A} = \sqrt[3]{1728} = 12 \text{ cm}$. <br /><br />
-            <strong>Alternatif Cepat:</strong><br />
-            Perbandingan Volume = $27 : 1$.<br />
-            Perbandingan Rusuk = $\sqrt[3]{27} : \sqrt[3]{1} = 3 : 1$.<br />
-            Rusuk A = $3 \times \text{Rusuk B} = 3 \times 4 = 12 \text{ cm}$.
-            <br /><br />
-            <strong>Kesimpulan:</strong> Panjang rusuk kubus A adalah 12 cm.
-            Jawaban yang benar adalah <strong>C</strong>.
-          </td>
-          <td></td>
-          <td></td>
-        </tr>
-        <!-- Soal 16 -->
-        <tr>
-          <td>COURSE-HTGHAVC1</td>
-          <td>TOPIC-576TQM42</td>
-          <td>SUBTOPI-HRT3WUJ7</td>
-          <td>Medium</td>
-          <td>TOROA</td>
-          <td>RUANGSNBT</td>
-          <td></td>
-          <td>
-            Terdapat 6 orang siswa bernama A, B, C, D, E, dan F. Akan dibentuk
-            sebuah tim cerdas cermat yang terdiri dari 4 orang. Jika disyaratkan
-            bahwa siswa A dan siswa B tidak boleh terpilih bersama-sama dalam
-            satu tim, berapa banyak cara menyusun tim tersebut?
-          </td>
-          <td>9</td>
-          <td>10</td>
-          <td>12</td>
-          <td>15</td>
-          <td></td>
-          <td>A</td>
-          <td>
-            PEMBAHASAN:<br />
-            <strong>Konsep:</strong> Total Cara Tanpa Syarat - Cara yang Dilarang.
-            <br /><br />
-            <strong>Langkah 1: Hitung total cara memilih 4 dari 6 orang tanpa
-              syarat.</strong><br />
-            $${}_6C_4 = \frac{6 \times 5 \times 4 \times 3}{4 \times 3 \times 2 \times 1} = 15 \text{ cara}$$
-            <br />
-            <strong>Langkah 2: Hitung cara yang DILARANG (A dan B terpilih
-              bareng).</strong><br />
-            Jika A dan B sudah pasti terpilih, kita tinggal memilih 2 orang lagi
-            dari sisa 4 orang (C, D, E, F).<br />
-            $${}_4C_2 = \frac{4 \times 3}{2 \times 1} = 6 \text{ cara}$$
-            <br />
-            <strong>Langkah 3: Kurangkan total cara dengan cara
-              terlarang.</strong><br />
-            Total cara sah = $15 - 6 = 9$ cara. <br /><br />
-            <strong>Kesimpulan:</strong> Ada 9 cara. Jawaban yang benar adalah
-            <strong>A</strong>.
-          </td>
-          <td></td>
-          <td></td>
-        </tr>
-        <!-- Soal 17 -->
-        <tr>
-          <td>COURSE-HTGHAVC1</td>
-          <td>TOPIC-Z0U2TKA5</td>
-          <td>SUBTOPI-P5GZJQYT</td>
-          <td>Medium</td>
-          <td>TOROA</td>
-          <td>RUANGSNBT</td>
-          <td></td>
-          <td>
-            Sebuah persegi ABCD memiliki panjang sisi 12 cm. Titik P terletak
-            pada sisi BC sehingga panjang BP adalah 4 cm. Titik Q terletak pada
-            sisi CD sehingga panjang CQ adalah 4 cm. Berapakah luas segitiga
-            APQ?
-            <br /><br />
-            [Deskripsi Gambar: Bayangkan sebuah persegi ABCD (A kiri atas, B
-            kanan atas, C kanan bawah, D kiri bawah). Titik P ada di sisi BC, 4
-            cm dari B. Titik Q ada di sisi CD, 4 cm dari C. Dicari luas segitiga
-            APQ.]
-          </td>
-          <td>48 cm²</td>
-          <td>56 cm²</td>
-          <td>72 cm²</td>
-          <td>88 cm²</td>
+          <td>6 km</td>
+          <td>9 km</td>
+          <td>12 km</td>
+          <td>15 km</td>
           <td></td>
           <td>B</td>
           <td>
             PEMBAHASAN:<br />
-            <strong>Metode:</strong> Luas Persegi - (Luas 3 Segitiga Siku-siku di
-            pojok). <br /><br />
-            <strong>Langkah 1: Identifikasi panjang sisi-sisi segitiga
-              pojok.</strong>
-            <ul>
-              <li>Sisi persegi = 12.</li>
-              <li>$BP = 4$, maka $PC = 12 - 4 = 8$.</li>
-              <li>$CQ = 4$, maka $QD = 12 - 4 = 8$.</li>
-              <li>
-                Segitiga 1 (ABP): alas=12, tinggi=4. Luas = $\frac{1}{2} \times 12
-                \times 4 = 24$.
-              </li>
-              <li>
-                Segitiga 2 (PCQ): alas=8, tinggi=4. Luas = $\frac{1}{2} \times 8
-                \times 4 = 16$.
-              </li>
-              <li>
-                Segitiga 3 (ADQ): alas=12, tinggi=8. Luas = $\frac{1}{2} \times 12
-                \times 8 = 48$.
-              </li>
-            </ul>
-            <strong>Langkah 2: Hitung Luas Persegi.</strong><br />
-            Luas Persegi = $12 \times 12 = 144$. <br /><br />
-            <strong>Langkah 3: Hitung Luas APQ.</strong><br />
-            Luas APQ = $144 - (24 + 16 + 48) = 144 - 88 = 56 \text{ cm}^2$.
-            <br /><br />
-            <strong>Kesimpulan:</strong> Luas segitiga APQ adalah 56 cm². Jawaban
-            yang benar adalah <strong>B</strong>.
-          </td>
-          <td></td>
-          <td></td>
-        </tr>
-        <!-- Soal 18 -->
-        <tr>
-          <td>COURSE-HTGHAVC1</td>
-          <td>TOPIC-9BL3H5B7</td>
-          <td>SUBTOPI-A06WC38T</td>
-          <td>Medium</td>
-          <td>TOROA</td>
-          <td>RUANGSNBT</td>
-          <td></td>
-          <td>
-            Diketahui $$p$$ dan $$q$$ adalah dua bilangan prima yang berbeda. Jika
-            bilangan 2026 dibagi dengan $$p$$ akan memberikan sisa 1, sedangkan
-            bilangan 2023 jika dibagi dengan $$q$$ akan memberikan sisa 0. Jika
-            kita memilih $$p$$ sebagai bilangan prima terkecil yang memenuhi
-            syarat dan $$q$$ sebagai bilangan prima terbesar yang mungkin,
-            berapakah nilai dari $$p + q$$?
-          </td>
-          <td>10</td>
-          <td>12</td>
-          <td>20</td>
-          <td>22</td>
-          <td></td>
-          <td>C</td>
-          <td>
-            PEMBAHASAN:<br />
-            <strong>Langkah 1: Analisis $p$.</strong><br />
-            $2026 \div p$ sisa 1, artinya $2026 - 1 = 2025$ habis dibagi $p$.<br />
-            $2025$ berakhiran 5, pasti habis dibagi 5.<br />
-            Faktor prima dari 2025: $2025 = 5^2 \times 81 = 5^2 \times 3^4$.<br />
-            Faktor prima terkecilnya adalah 3. Jadi $p = 3$. <br /><br />
-            <strong>Langkah 2: Analisis $q$.</strong><br />
-            $2023 \div q$ sisa 0, artinya $q$ adalah faktor prima dari 2023.<br />
-            Cek faktor prima 2023: $2023 \div 7 = 289 = 17^2$.<br />
-            Faktor prima dari 2023 adalah 7 dan 17.<br />
-            $q$ adalah faktor prima terbesar, jadi $q = 17$. <br /><br />
-            <strong>Langkah 3: Hitung $p + q$.</strong><br />
-            $p + q = 3 + 17 = 20$. <br /><br />
-            <strong>Kesimpulan:</strong> Nilai $p+q$ adalah 20. Jawaban yang benar
-            adalah <strong>C</strong>.
-          </td>
-          <td></td>
-          <td></td>
-        </tr>
-        <!-- Soal 19 -->
-        <tr>
-          <td>COURSE-HTGHAVC1</td>
-          <td>TOPIC-TKSH02NQ</td>
-          <td>SUBTOPI-VLKVLCFE</td>
-          <td>Medium</td>
-          <td>TOROA</td>
-          <td>RUANGSNBT</td>
-          <td></td>
-          <td>
-            Lima tahun yang lalu, umur seorang Ayah adalah 3 kali umur anaknya.
-            Saat ini, jumlah umur mereka berdua adalah 58 tahun. Berapa tahun
-            umur anak saat ini?
-          </td>
-          <td>12</td>
-          <td>17</td>
-          <td>22</td>
-          <td>41</td>
-          <td></td>
-          <td>B</td>
-          <td>
-            PEMBAHASAN:<br />
-            <strong>Langkah 1: Buat persamaan.</strong><br />
-            Misal $A$ = Ayah sekarang, $N$ = Anak sekarang.<br />
-            (1) $A + N = 58 \Rightarrow A = 58 - N$<br />
-            (2) $(A - 5) = 3 \times (N - 5)$ <br /><br />
-            <strong>Langkah 2: Substitusi persamaan (1) ke (2).</strong><br />
-            $$(58 - N - 5) = 3N - 15$$
-            $$53 - N = 3N - 15$$
-            $$53 + 15 = 3N + N$$
-            $$68 = 4N$$
-            $$N = 68 : 4 = 17$$
-            <br />
-            <strong>Kesimpulan:</strong> Umur anak saat ini adalah 17 tahun.
-            Jawaban yang benar adalah <strong>B</strong>.
-          </td>
-          <td></td>
-          <td></td>
-        </tr>
-        <!-- Soal 20 -->
-        <tr>
-          <td>COURSE-HTGHAVC1</td>
-          <td>TOPIC-FSF2AE44</td>
-          <td>SUBTOPI-95EYOPIJ</td>
-          <td>Medium</td>
-          <td>TOROA</td>
-          <td>RUANGSNBT</td>
-          <td></td>
-          <td>
-            Sebuah tim proyek menggunakan $$\frac{1}{5}$$ bagian anggarannya
-            untuk pembelian alat dan $$\frac{1}{4}$$ bagian untuk biaya
-            konsumsi. Sisa anggaran tersebut disimpan untuk biaya tak terduga.
-            Jika diketahui sisa anggaran yang disimpan adalah Rp 1.100.000,
-            berapakah total anggaran tim proyek tersebut?
-          </td>
-          <td>Rp 1.500.000</td>
-          <td>Rp 1.800.000</td>
-          <td>Rp 2.000.000</td>
-          <td>Rp 2.200.000</td>
-          <td></td>
-          <td>C</td>
-          <td>
-            PEMBAHASAN:<br />
-            <strong>Langkah 1: Hitung total bagian yang sudah
-              terpakai.</strong><br />
-            $$\text{Terpakai} = \frac{1}{5} + \frac{1}{4} = \frac{4}{20} + \frac{5}{20} = \frac{9}{20} \text{ bagian}$$
-            <br />
-            <strong>Langkah 2: Hitung bagian sisa.</strong><br />
-            $$\text{Sisa} = 1 - \frac{9}{20} = \frac{20}{20} - \frac{9}{20} = \frac{11}{20} \text{ bagian}$$
-            <br />
-            <strong>Langkah 3: Cari total anggaran.</strong><br />
-            Diketahui $\frac{11}{20}$ bagian = Rp 1.100.000.<br />
-            $$\text{Total} = \frac{20}{11} \times 1.100.000 = 20 \times 100.000 = Rp 2.000.000$$
-            <br />
-            <strong>Kesimpulan:</strong> Total anggaran adalah Rp 2.000.000.
-            Jawaban yang benar adalah <strong>C</strong>.
+            Kita cari terlebih dahulu total bagian jalan yang sudah dikerjakan selama dua hari dengan menyamakan penyebut bilangannya (KPK 4 dan 8 adalah 8).<br /><br />
+            Hari pertama = $$\\frac{1}{4} = \frac{2}{8}$$ bagian.<br />
+            Hari kedua = $$\\frac{3}{8}$$ bagian.<br />
+            Total jalan yang sudah diaspal = $$\\frac{2}{8} + \frac{3}{8} = \frac{5}{8}$$ bagian.<br /><br />
+            Sisa bagian jalan yang belum diaspal (dari 1 keseluruhan utuh) = $$1 - \frac{5}{8} = \frac{8}{8} - \frac{5}{8} = \frac{3}{8}$$ bagian.<br />
+            Ubah sisa tersebut ke dalam satuan kilometer: $$\\frac{3}{8} \times 24 = 3 \times 3 = 9$$ km.<br /><br />
+            <b><u>Jadi, jawaban yang tepat adalah B.</u></b>
           </td>
           <td></td>
           <td></td>
